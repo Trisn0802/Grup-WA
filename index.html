@@ -10,6 +10,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.bundle.js">
+  </script>
 
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -31,15 +33,13 @@
     padding: 15px 32px;
     background-color: white;
     color: #212121;
-    width: 100%;
-    height: 100%;
     border-radius: 8px;
   }
 
   .a-btn:hover {
-    background-color: gold;
-    border: 1px solid gold;
-    color: #212121;
+    background-color: rgb(0, 202, 27);
+    border: 1px solid rgb(0, 202, 27);
+    color: #fff;
   }
 
   .a-disable {
@@ -83,65 +83,44 @@
         </div>
         <div class="offcanvas-body justify-content-center align-content-center">
           <ul class="navbar-nav justify-content-end flex-grow-1">
-            <li class="nav-item">
-              <a class="a-btn" aria-current="page" href="#home">Home</a>
-            </li>
+            <a class="nav-item a-btn" aria-current="page" href="#home">Home</a>
             <br>
+            <a class="nav-item a-btn" aria-current="page" href="#about">About</a>
             <br>
-            <li class="nav-item">
-              <a class="a-btn" aria-current="page" href="#about">About</a>
-            </li>
+            <a class="nav-item a-btn" aria-current="page" href="#circle">Circle</a>
             <br>
+            <a class="nav-item a-btn" aria-current="page" href="#contact">Contact</a>
             <br>
-            <li class="nav-item">
-              <a class="a-btn" aria-current="page" href="#circle">Circle</a>
-            </li>
+            <a class="nav-item a-btn" aria-current="page" href="#brother">Brother's</a>
             <br>
-            <br>
-            <li class="nav-item">
-              <a class="a-btn" aria-current="page" href="#contact">Contact</a>
-            </li>
-            <br>
-            <br>
-            <li class="nav-item">
-              <a class="a-btn" aria-current="page" href="#brother">Brother's</a>
-            </li>
-            <br>
-            <br>
-            <li class="nav-item">
-              <a class="a-disable" aria-current="page" href="#">Komentar</a>
-            </li>
-            <br>
+            <a class="a-disable" aria-current="page" href="#">Komentar</a>
             <hr class="hr-nav bg-white">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Anggota
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="ari.html">Ari</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="iqbal.html">Iqbal</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="luqman.html">Luqman</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="reza.html">Reza</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="ilham.html">Mamink</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" aria-current="page" href="fahri.html">Fahri</a>
-                </li>
-                <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Coming Soon</a></li>
-          </ul>
-          </li>
+            <a class="a-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Anggota
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item a-btn" aria-current="page" href="ari.html">Ari</a>
+              </li>
+              <li>
+                <a class="dropdown-item a-btn" aria-current="page" href="iqbal.html">Iqbal</a>
+              </li>
+              <li>
+                <a class="dropdown-item a-btn" aria-current="page" href="luqman.html">Luqman</a>
+              </li>
+              <li>
+                <a class="dropdown-item a-btn" aria-current="page" href="reza.html">Reza</a>
+              </li>
+              <li>
+                <a class="dropdown-item a-btn" aria-current="page" href="ilham.html">Mamink</a>
+              </li>
+              <li>
+                <a class="dropdown-item a-btn" aria-current="page" href="fahri.html">Fahri</a>
+              </li>
+              <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -394,8 +373,6 @@
           class="text-white fw-bold">(Trisna Almuti XII RPL)</a></p>
     </footer>
     <!-- Akhir Footer -->
-    <script src="js/bootstrap.bundle.js">
-    </script>
     <!-- 
     <script src="js/bootstrap.bundle.min.js">
     </script> -->
