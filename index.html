@@ -76,7 +76,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel" style="background-color: #515151">
+        aria-labelledby="offcanvasNavbarLabel" style="background-color: #515151; width: 50%;">
         <div class="offcanvas-header ">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barudak Cibaduyut</h5>
           <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -93,33 +93,33 @@
             <br>
             <a class="nav-item a-btn" aria-current="page" href="#brother">Brother's</a>
             <br>
-            <a class="a-disable" aria-current="page" href="#">Komentar</a>
-            <hr class="hr-nav bg-white">
-            <a class="a-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Anggota
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item a-btn" aria-current="page" href="ari.html">Ari</a>
-              <li>
-                <a class="dropdown-item a-btn" aria-current="page" href="iqbal.html">Iqbal</a>
-              </li>
-              <li>
-                <a class="dropdown-item a-btn" aria-current="page" href="luqman.html">Luqman</a>
-              </li>
-              <li>
-                <a class="dropdown-item a-btn" aria-current="page" href="reza.html">Reza</a>
-              </li>
-              <li>
-                <a class="dropdown-item a-btn" aria-current="page" href="ilham.html">Mamink</a>
-              </li>
-              <li>
-                <a class="dropdown-item a-btn" aria-current="page" href="fahri.html">Fahri</a>
-              </li>
-              <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Coming Soon</a></li>
-            </ul>
+            <p class="a-disable" aria-current="page" href="">Komentar</>
+              <hr class="hr-nav bg-white">
+              <a class="a-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Anggota
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="ari.html">Ari</a>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="iqbal.html">Iqbal</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="luqman.html">Luqman</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="reza.html">Reza</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="ilham.html">Mamink</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="fahri.html">Fahri</a>
+                </li>
+                <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+              </ul>
           </ul>
         </div>
       </div>
@@ -375,27 +375,36 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-8">
+            <div class="alert alert-danger d-flex align-items-center alert-dismissible fade d-none show my-alert-error"
+              role="alert" style="width: 100%; height: 10%;">
+              <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Danger:" style="width: 3%;">
+                <use xlink:href="#exclamation-triangle-fill" /></svg>
+              <div>
+                <Strong>Kirim pesan gagal</Strong>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
             <div class="alert alert-success d-flex align-items-center alert-dismissible fade show d-none my-alert"
               role="alert" style="width: 100%; height: 10%;">
-              <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:" style="width: 3%;">
+              <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:" style="width: 10%;">
                 <use xlink:href="#check-circle-fill" /></svg>
               <div>
-                <Strong>Kirim pesan berhasil</Strong> Terimakasih pesan anda telah kami terima
+                <Strong>Kirim pesan berhasil</Strong>
               </div>
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <form name='barudak-contact-form'>
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim fw-bold">Kirim</button>
               <button class="btn btn-primary d-none btn-loading" type="button" disabled>
@@ -429,6 +438,7 @@
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
+      const myAlertErr = document.querySelector('.my-alert-error');
 
       form.addEventListener('submit', e => {
         e.preventDefault();
@@ -451,7 +461,15 @@
             form.reset();
             console.log('Success!', response)
           })
-          .catch(error => console.error('Error!', error.message))
+          .catch(error => {
+            btnKirim.classList.toggle('d-none');
+            btnLoading.classList.toggle('d-none');
+            // tampilkan alert
+            myAlertErr.classList.toggle('d-none');
+            // form reset
+            form.reset();
+            console.error('Error!', error.message)
+          })
       });
     </script>
 </body>
