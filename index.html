@@ -67,8 +67,8 @@
 
 <body id="home">
   <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark fixed-top fw-semibold w-auto nav-animation">
-    <div class="container-fluid">
+  <nav class="navbar navbar-dark bg-dark fixed-top fw-semibold w-auto">
+    <div class="container-fluid nav-animation">
       <a class="navbar-brand" href="#">
         <img src="Logo-only.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         Barudak Cibaduyut
@@ -77,56 +77,56 @@
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel" style="background-color: #515151; width: 50%;">
+        <div class="offcanvas-header ">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barudak Cibaduyut</h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-center align-content-center">
+          <ul class="navbar-nav justify-content-end flex-grow-1">
+            <a class="nav-item a-btn" aria-current="page" href="#home">Home</a>
+            <br>
+            <a class="nav-item a-btn" aria-current="page" href="#about">About</a>
+            <br>
+            <a class="nav-item a-btn" aria-current="page" href="#circle">Circle</a>
+            <br>
+            <a class="nav-item a-btn" aria-current="page" href="#contact">Contact</a>
+            <br>
+            <a class="nav-item a-btn" aria-current="page" href="#brother">Brother's</a>
+            <br>
+            <p class="a-disable" aria-current="page" href="">Komentar</>
+              <hr class="hr-nav bg-white">
+              <a class="a-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Anggota
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="ari.html">Ari</a>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="iqbal.html">Iqbal</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="luqman.html">Luqman</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="reza.html">Reza</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="ilham.html">Mamink</a>
+                </li>
+                <li>
+                  <a class="dropdown-item a-btn" aria-current="page" href="fahri.html">Fahri</a>
+                </li>
+                <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+              </ul>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
-  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
-    aria-labelledby="offcanvasNavbarLabel" style="background-color: #515151; width: 50%;">
-    <div class="offcanvas-header ">
-      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barudak Cibaduyut</h5>
-      <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body justify-content-center align-content-center">
-      <ul class="navbar-nav justify-content-end flex-grow-1">
-        <a class="nav-item a-btn" aria-current="page" href="#home">Home</a>
-        <br>
-        <a class="nav-item a-btn" aria-current="page" href="#about">About</a>
-        <br>
-        <a class="nav-item a-btn" aria-current="page" href="#circle">Circle</a>
-        <br>
-        <a class="nav-item a-btn" aria-current="page" href="#contact">Contact</a>
-        <br>
-        <a class="nav-item a-btn" aria-current="page" href="#brother">Brother's</a>
-        <br>
-        <p class="a-disable" aria-current="page" href="">Komentar</>
-          <hr class="hr-nav bg-white">
-          <a class="a-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Anggota
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item a-btn" aria-current="page" href="ari.html">Ari</a>
-            <li>
-              <a class="dropdown-item a-btn" aria-current="page" href="iqbal.html">Iqbal</a>
-            </li>
-            <li>
-              <a class="dropdown-item a-btn" aria-current="page" href="luqman.html">Luqman</a>
-            </li>
-            <li>
-              <a class="dropdown-item a-btn" aria-current="page" href="reza.html">Reza</a>
-            </li>
-            <li>
-              <a class="dropdown-item a-btn" aria-current="page" href="ilham.html">Mamink</a>
-            </li>
-            <li>
-              <a class="dropdown-item a-btn" aria-current="page" href="fahri.html">Fahri</a>
-            </li>
-            <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Coming Soon</a></li>
-          </ul>
-      </ul>
-    </div>
-  </div>
   <!-- Akhir Navbar -->
 
   <!-- Jumbotron -->
@@ -439,11 +439,11 @@
     <script>
       gsap.registerPlugin(TextPlugin);
 
-      gsap.from('.nav-animation', {
-        duration: 1.5,
-        y: '-100%',
-        ease: 'bounce',
-      });
+      // gsap.from('.nav-animation', {
+      //   duration: 1.5,
+      //   y: '-100%',
+      //   ease: 'bounce',
+      // });
 
       gsap.from('.jumbotron img', {
         duration: 0.5,
