@@ -10,8 +10,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="js/bootstrap.bundle.js">
-  </script>
+
+  <!-- CSS AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -24,13 +25,14 @@
 <style>
   body {
     overflow-x: hidden;
+    width: auto;
   }
 
   .a-btn {
     transition: 0.4s;
     border: 1px solid white;
     text-decoration: none;
-    padding: 15px 32px;
+    padding: 1rem;
     background-color: white;
     color: #212121;
     border-radius: 8px;
@@ -65,7 +67,7 @@
 
 <body id="home">
   <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark fixed-top fw-semibold">
+  <nav class="navbar navbar-dark bg-dark fixed-top fw-semibold w-auto nav-animation">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="Logo-only.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -75,63 +77,63 @@
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel" style="background-color: #515151; width: 50%;">
-        <div class="offcanvas-header ">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barudak Cibaduyut</h5>
-          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body justify-content-center align-content-center">
-          <ul class="navbar-nav justify-content-end flex-grow-1">
-            <a class="nav-item a-btn" aria-current="page" href="#home">Home</a>
-            <br>
-            <a class="nav-item a-btn" aria-current="page" href="#about">About</a>
-            <br>
-            <a class="nav-item a-btn" aria-current="page" href="#circle">Circle</a>
-            <br>
-            <a class="nav-item a-btn" aria-current="page" href="#contact">Contact</a>
-            <br>
-            <a class="nav-item a-btn" aria-current="page" href="#brother">Brother's</a>
-            <br>
-            <p class="a-disable" aria-current="page" href="">Komentar</>
-              <hr class="hr-nav bg-white">
-              <a class="a-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Anggota
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item a-btn" aria-current="page" href="ari.html">Ari</a>
-                <li>
-                  <a class="dropdown-item a-btn" aria-current="page" href="iqbal.html">Iqbal</a>
-                </li>
-                <li>
-                  <a class="dropdown-item a-btn" aria-current="page" href="luqman.html">Luqman</a>
-                </li>
-                <li>
-                  <a class="dropdown-item a-btn" aria-current="page" href="reza.html">Reza</a>
-                </li>
-                <li>
-                  <a class="dropdown-item a-btn" aria-current="page" href="ilham.html">Mamink</a>
-                </li>
-                <li>
-                  <a class="dropdown-item a-btn" aria-current="page" href="fahri.html">Fahri</a>
-                </li>
-                <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Coming Soon</a></li>
-              </ul>
-          </ul>
-        </div>
-      </div>
     </div>
   </nav>
+  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+    aria-labelledby="offcanvasNavbarLabel" style="background-color: #515151; width: 50%;">
+    <div class="offcanvas-header ">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Barudak Cibaduyut</h5>
+      <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body justify-content-center align-content-center">
+      <ul class="navbar-nav justify-content-end flex-grow-1">
+        <a class="nav-item a-btn" aria-current="page" href="#home">Home</a>
+        <br>
+        <a class="nav-item a-btn" aria-current="page" href="#about">About</a>
+        <br>
+        <a class="nav-item a-btn" aria-current="page" href="#circle">Circle</a>
+        <br>
+        <a class="nav-item a-btn" aria-current="page" href="#contact">Contact</a>
+        <br>
+        <a class="nav-item a-btn" aria-current="page" href="#brother">Brother's</a>
+        <br>
+        <p class="a-disable" aria-current="page" href="">Komentar</>
+          <hr class="hr-nav bg-white">
+          <a class="a-btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Anggota
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item a-btn" aria-current="page" href="ari.html">Ari</a>
+            <li>
+              <a class="dropdown-item a-btn" aria-current="page" href="iqbal.html">Iqbal</a>
+            </li>
+            <li>
+              <a class="dropdown-item a-btn" aria-current="page" href="luqman.html">Luqman</a>
+            </li>
+            <li>
+              <a class="dropdown-item a-btn" aria-current="page" href="reza.html">Reza</a>
+            </li>
+            <li>
+              <a class="dropdown-item a-btn" aria-current="page" href="ilham.html">Mamink</a>
+            </li>
+            <li>
+              <a class="dropdown-item a-btn" aria-current="page" href="fahri.html">Fahri</a>
+            </li>
+            <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+          </ul>
+      </ul>
+    </div>
+  </div>
   <!-- Akhir Navbar -->
 
   <!-- Jumbotron -->
   <section class="jumbotron text-center">
     <img src="img/Barudak Cibaduyut2.png" alt="Trisna Almuti" width="200" class="rounded-circle img-thumbnail" />
     <h1 class="display-4" style="font-weight: bold;">Barudak Cibaduyut</h1>
-    <p class="lead">Group . 9 Participants</p>
+    <p class="lead"></p>
     <p class="pengunjung"><?php
       $filename = 'counter.txt';
        
@@ -171,10 +173,10 @@
         </div>
       </div>
       <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right" data-aos-delay="100" data-aos-offset="300">
           <p>Just a random grup</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-left" data-aos-delay="400" data-aos-offset="300">
           <p>U can spell a randomly sh*t in here</p>
         </div>
       </div>
@@ -196,8 +198,8 @@
         </div>
       </div>
       <b class="row justify-content-center">
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="100">
             <img src="img/My Projects/Trisna2.jpg" class="card-img-top" alt="projects1" />
             <div class="card-body">
               <center>
@@ -206,8 +208,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="200">
             <img src="img/My Projects/Ari.jpg" class="card-img-top" alt="projects2" />
             <div class="card-body">
               <center>
@@ -216,8 +218,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="300">
             <img src="img/My Projects/Iqbal2.jpg" class="card-img-top" alt="projects3" />
             <div class="card-body">
               <center>
@@ -227,8 +229,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="400">
             <img src="img/My Projects/Luqman.jpg" class="card-img-top" alt="projects4" />
             <div class="card-body">
               <center>
@@ -237,8 +239,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="500">
             <img src="img/My Projects/Reza4.jpg" class="card-img-top" alt="projects5" />
             <div class="card-body">
               <center>
@@ -248,8 +250,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="600">
             <img src="img/My Projects/Mamink.jpg" class="card-img-top" alt="projects5" />
             <div class="card-body">
               <center>
@@ -258,8 +260,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="700">
             <img src="img/My Projects/Fahri.jpg" class="card-img-top" alt="projects5" />
             <div class="card-body">
               <center>
@@ -269,8 +271,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card">
+        <div class="col-md-3 mb-3">
+          <div class="card" data-aos="flip-left" data-aos-delay="800">
             <img src="img/My Projects/Nando.png" class="card-img-top" alt="projects5" />
             <div class="card-body">
               <center>
@@ -299,40 +301,40 @@
             <h2>Brother's</h2>
           </div>
         </div>
-        <div class="col-md-17 mb-5">
-          <div class="card">
+        <div class="col-md-12 mb-5">
+          <div class="card" data-aos="fade-down">
             <img src="img/Family.jpg" class="card-img-top" alt="projects6" />
             <div class="card-body">
               <p class="card-text text-center">Brother's Orion</p>
             </div>
           </div>
         </div>
-        <div class="col-md-17 mb-5">
-          <div class="card">
+        <div class="col-md-12 mb-5">
+          <div class="card" data-aos="fade-down">
             <img src="img/Family2.jpg" class="card-img-top" alt="projects7" />
             <div class="card-body">
               <p class="card-text text-center">Brother's Perpusnas</p>
             </div>
           </div>
         </div>
-        <div class="col-md-17 mb-5">
-          <div class="card">
+        <div class="col-md-12 mb-5">
+          <div class="card" data-aos="fade-down">
             <img src="img/Family3.jpg" class="card-img-top" alt="projects7" />
             <div class="card-body">
               <p class="card-text text-center">Brother's Event Wibu</p>
             </div>
           </div>
         </div>
-        <div class="col-md-17 mb-5">
-          <div class="card">
+        <div class="col-md-12 mb-5">
+          <div class="card" data-aos="fade-down">
             <img src="img/Family Blok M (1).jpg" class="card-img-top" alt="projects7" />
             <div class="card-body">
               <p class="card-text text-center">Brother's Event Wibu 2</p>
             </div>
           </div>
         </div>
-        <div class="col-md-17 mb-5">
-          <div class="card">
+        <div class="col-md-12 mb-5">
+          <div class="card" data-aos="fade-down">
             <img src="img/Family Blok M (2).jpg" class="card-img-top" alt="projects7" />
             <div class="card-body">
               <p class="card-text text-center">Brother's Event Wibu 3</p>
@@ -367,7 +369,7 @@
 
     <!-- Contact -->
     <section id="contact">
-      <div class="container">
+      <div class="container" data-aos="zoom-in" data-aos-offset="400">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Contact Me</h2>
@@ -427,10 +429,54 @@
     <!-- Footer -->
     <footer class="bg-primary text-white text-center p-3">
       <p>Crate by 👨🏻‍🎓 Siswa SMKN 1 JAKARTA <br><a href="https://www.facebook.com/profile.php?id=100009981306756"
-          class="text-white fw-bold">(Trisna Almuti XII RPL)</a></p>
+          class="text-white fw-bold link-warning text-decoration-none">(Trisna Almuti XII RPL)</a></p>
     </footer>
     <!-- Akhir Footer -->
 
+    <!-- Animations GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+
+      gsap.from('.nav-animation', {
+        duration: 1.5,
+        y: '-100%',
+        ease: 'bounce',
+      });
+
+      gsap.from('.jumbotron img', {
+        duration: 0.5,
+        rotateY: 360,
+        delay: 1,
+        opacity: 0,
+      });
+
+      gsap.to('.lead', {
+        duration: 2,
+        delay: 3,
+        text: 'Group . 9 Participants',
+      });
+
+      gsap.from('.display-4', {
+        duration: 2,
+        x: '-100%',
+        delay: 1,
+        ease: 'back',
+      })
+    </script>
+
+    <!-- Animations AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="js/bootstrap.bundle.js">
+    </script>
+
+    <!-- Contact Function Using Exel -->
     <script>
       const scriptURL =
         'https://script.google.com/macros/s/AKfycbzHUzI54wJvbziKtv0TVFygEnEkAOUX__ztZij_mKVUaw-hfz1Swl2HORB58S70QozJOQ/exec'
